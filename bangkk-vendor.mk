@@ -3321,6 +3321,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/bangkk/proprietary/vendor/etc/sensors/config/strait_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/strait_power_0.json \
     vendor/motorola/bangkk/proprietary/vendor/etc/sensors/config/strait_qmc6308_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/strait_qmc6308_0.json \
     vendor/motorola/bangkk/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/motorola/bangkk/proprietary/vendor/etc/tetras/portrait_repair_composite.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite.model \
     vendor/motorola/bangkk/proprietary/vendor/etc/thermal-engine-bangkk-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-bangkk-camera.conf \
     vendor/motorola/bangkk/proprietary/vendor/etc/thermal-engine-bangkk-game-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-bangkk-game-normal.conf \
     vendor/motorola/bangkk/proprietary/vendor/etc/thermal-engine-bangkk-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-bangkk-game-perf.conf \
@@ -3333,6 +3334,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/bangkk/proprietary/vendor/firmware/focaltech_ts_fw_csot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_csot.bin \
     vendor/motorola/bangkk/proprietary/vendor/firmware/goodix-tm-gt9916S-23062705-649a9b6c-bangkk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tm-gt9916S-23062705-649a9b6c-bangkk.bin \
     vendor/motorola/bangkk/proprietary/vendor/firmware/mot_aw86006.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_aw86006.prog \
+    vendor/motorola/bangkk/proprietary/vendor/firmware/mot_dw9784.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_dw9784.prog \
     vendor/motorola/bangkk/proprietary/vendor/firmware/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3nrn4v_firmware.bin \
     vendor/motorola/bangkk/proprietary/vendor/firmware/tm_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tm_goodix_cfg_group.bin \
     vendor/motorola/bangkk/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_bangkk_ov16a1q_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_bangkk_ov16a1q_ofilm.bin \
@@ -3452,6 +3454,8 @@ PRODUCT_PACKAGES += \
     libAncFaceDetect \
     libBSTSWAD \
     libRbsFlow \
+    libaidenoiser \
+    libaidenoiserv2 \
     libancbase_fd \
     libarcsoft_chi_utils \
     libarcsoft_hdr_detection \
@@ -3470,6 +3474,7 @@ PRODUCT_PACKAGES += \
     libcamxfacialfeatures \
     libcamxfdalgo \
     libcamxfdengine \
+    libcamxifestriping \
     libcamximageformatutils \
     libcamxqsatalgo \
     libcamxstatscore \
@@ -3478,8 +3483,12 @@ PRODUCT_PACKAGES += \
     libcamxtintlessalgo \
     libchilog \
     libcom.qti.chinodeutils \
+    libdlrmsc \
     libets_teeclient_v3 \
+    libipebpsstriping \
+    libipebpsstriping170 \
     libjpege \
+    liblowlight_ai_portrait.arcsoft \
     libmctfengine_stub \
     libmmcamera_bestats \
     libmmcamera_cac3 \
@@ -3497,7 +3506,11 @@ PRODUCT_PACKAGES += \
     libofflinelog \
     libopencv \
     libopestriping \
+    libportrait_repair_ppl3_ocl \
+    libqll10 \
+    libqllengine \
     libremosaic_wrapper \
+    libremosaiclib \
     libswregistrationalgo \
     libtfestriping \
     libundistort_impl \
