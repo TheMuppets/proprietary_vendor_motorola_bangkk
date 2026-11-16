@@ -3449,8 +3449,10 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.mcx.usecase.extension \
     camera.qcom \
     com.qti.chi.override \
+    libAncFaceDetect \
     libBSTSWAD \
     libRbsFlow \
+    libancbase_fd \
     libarcsoft_chi_utils \
     libarcsoft_hdr_detection \
     libarcsoft_high_dynamic_range \
